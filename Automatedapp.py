@@ -1,6 +1,7 @@
 import matplotlib
 matplotlib.use('Agg')
-
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning, module="openpyxl")
 import streamlit as st
 import pandas as pd
 from datetime import date
