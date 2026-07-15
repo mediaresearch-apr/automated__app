@@ -20,10 +20,7 @@ import logging
 import warnings
 from nltk.corpus import stopwords
 import nltk
-try:
-    nltk.data.find('corpora/stopwords')
-except LookupError:
-    nltk.download('stopwords')
+nltk.download('stopwords')
 import os
 from openpyxl import Workbook
 from openpyxl.comments import Comment
